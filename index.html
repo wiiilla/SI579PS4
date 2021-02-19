@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>SI 579 Reading Todo List</title>
+    <meta name="description" content="SI 579 Reading Todo List">
+    <meta name="author" content="Willa Hua">
+
+
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+        }
+        
+        .checked {
+            text-decoration: line-through;
+        }
+        
+        .optional {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SI 579 Reading Todo list</h1>
+    <h3>Problem Set 4 by Willa Hua</h3>
+    <!-- Input Box for adding new items -->
+    <input type="text" value="What's the next reading?" id="new_item">
+    <button type="button" id="add_new_item"> Add Item </button>
+
+    <!-- Todo List with Checkboxes -->
+    <ul id="todo_list">
+        <li><input type="checkbox" class="checkbox"><span>What is spaghetti code & how to avoid</span><br>
+        </li>
+        <li><input type="checkbox" class="checkbox"><span>MDN Call stack</span><br>
+        </li>
+        <li><input type="checkbox" class="checkbox"><span>Eloquent Javascript(Chap 11, Callbacks, Promises)</span><br>
+        </li>
+        <li><input type="checkbox" class="checkbox"><span>(Optional) Event Loops</span><br>
+        </li>
+    </ul>
+
+    <!-- Button for highlighting items with the word "optional" -->
+    <button type="button" id = "highlight_button"> Highlight Optional Items </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
